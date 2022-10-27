@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 15px;
+
+}
+
+/* Small */
+
+@media (min-width: 768px) {
+    .container {
+        width: 375px;
+    }
+}
+
+/* Medium */
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Larg */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1440px;
+    }
+}
+
+:root {
+            /* Primary */
+    --pink: hsl(322, 100%, 66%);
+    --light-pink: hsl(321, 100%, 78%);
+    --light-red: hsl(0, 100%, 63%);
+            /* Neutral */
+    --very-dark-cyan: hsl(192, 100%, 9%);
+    --very-pale-blue: hsl(207, 100%, 98%);
+}
+
+p {
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+.transition {
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+}
+
+/* Component */
+
+.main .back {
+    background-color: var(--very-pale-blue);
+    box-shadow: 0px -10px 1px var(--very-pale-blue);
+}
+
+.background {
+    width: 100%;
+}
+
+.main .container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.main .container img {
+    width: 90%;
+}
+
+@media (max-width: 767px) {
+    .main .container img {
+        width: 100%;
+    }
+}
+
+.main .col {
+    width: fit-content;
+    margin: auto auto;
+}
+
+.main h2 {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: var(--very-dark-cyan);
+}
+
+.main p {
+    width: 85%;
+    font-size: 20px;
+    color: var(--very-dark-cyan);
+}
+
+.main .col {
+    width: 100%;
+}
+
+
+.community a,
+.ready a {
+    padding: 20px 100px;
+    background-color: var(--pink);
+    color: #fff;
+    text-transform: capitalize;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.community a:hover,
+.ready a:hover {
+    background-color: var(--light-pink);
+    box-shadow: 0px 6px 8px #00000052;
+}
+
+@media (max-width: 767px) {
+    .community a,
+    .ready a {
+        font-size: 15px;
+        padding: 15px 40px;
+    }
+}
+
+.community h1,
+.ready h1 {
+    font-size: 2.7em;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    
+    .community h1,
+    .ready h1 {
+        font-size: 27px;
+        text-align: center;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+}
